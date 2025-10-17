@@ -1,10 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv = "refresh" content = "5; url = https://theknot.com/henselwang" />
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashley Wang - Senior Software Engineering Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<div>
-  <h1 class="animate-reveal animate-first">> git checkout ashley.wang</h1>
-  <h1 class="animate-reveal animate-second">> git merge nick.hensel</h1>
-  <h1 class="animate-reveal animate-third">> git commit -m "10-15-2022"</h1>
-  <h1 class="animate-reveal animate-fourth">> git push</h1>
-</div>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <h1 class="logo">Ashley Wang</h1>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Ashley Wang</h1>
+                    <p class="hero-subtitle">Senior Software Engineering Manager</p>
+                    <div class="contact-info">
+                        <a href="mailto:ashwang168@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            ashwang168@gmail.com
+                        </a>
+                        <a href="tel:+16789065389" class="contact-link">
+                            <i class="fas fa-phone"></i>
+                            (678) 906-5389
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Summary -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Professional Summary</h2>
+                <div class="content-card">
+                    <p class="summary-text">
+                        Senior Software Engineering Manager with 10+ years of experience building and optimizing high-performance, real-time distributed systems. Strong background in C++ and Go development, large-scale networking, and low-latency infrastructure. Proven ability to design resilient platforms, mentor engineers, and deliver complex systems from conception to production. Contributor to open-source projects and early adopter of AI-assisted tools to accelerate engineering workflows.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Skills -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Key Skills</h2>
+                <div class="content-card">
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3 class="skill-title">Programming</h3>
+                            <p class="skill-list">Go, C/C++, Python, JavaScript, gRPC/protobuf</p>
+                        </div>
+                        <div class="skill-category">
+                            <h3 class="skill-title">Systems & Networking</h3>
+                            <p class="skill-list">Real-time systems, distributed systems, TCP/IP, Kubernetes</p>
+                        </div>
+                        <div class="skill-category">
+                            <h3 class="skill-title">Optimization</h3>
+                            <p class="skill-list">Performance tuning, large-scale observability, low-latency data pipelines</p>
+                        </div>
+                        <div class="skill-category">
+                            <h3 class="skill-title">DevOps & Tools</h3>
+                            <p class="skill-list">Docker, Helm, ArgoCD, Prometheus, Grafana, GitHub, Cursor, Claude</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                
+                <div class="content-card experience-item">
+                    <div class="experience-header">
+                        <h3 class="company-name">Solo.io</h3>
+                        <span class="job-title">Senior Manager, Gloo Platform</span>
+                        <span class="job-duration">Sept 2019 – Present · Remote</span>
+                    </div>
+                    <ul class="achievement-list">
+                        <li>Managed and scaled a high-performing engineering team, mentoring engineers in Go, C++, Kubernetes, and Envoy.</li>
+                        <li>Architected and delivered <strong>Gloo Mesh Core</strong> (Aug 2023), enabling secure, low-latency multi-cluster communication; became the company's top-selling product in its launch quarter.</li>
+                        <li>Built observability and performance tooling (Istio metrics, Cilium Hubble) to optimize traffic flow and improve real-time debugging for enterprise customers.</li>
+                        <li>Contributed to open-source Mesh Control Plane (MCP) repositories and designed distributed agent-to-agent communication protocols.</li>
+                        <li>Adopted AI-assisted development tools (Cursor, Claude) in 2025, streamlining workflows across a 20+ engineer platform team.</li>
+                    </ul>
+                </div>
+
+                <div class="content-card experience-item">
+                    <div class="experience-header">
+                        <h3 class="company-name">Akamai Technologies</h3>
+                        <span class="job-title">Software Engineer II, Platform Infrastructure</span>
+                        <span class="job-duration">2017 – 2019 · Cambridge, MA</span>
+                    </div>
+                    <ul class="achievement-list">
+                        <li>Developed and optimized <strong>Query2</strong>, a C++/Go system for real-time network performance monitoring at global scale (200,000+ edge machines).</li>
+                        <li>Reduced latency and improved throughput by refactoring monolithic components into gRPC-based microservices.</li>
+                        <li>Pioneered Docker adoption for legacy workloads, enabling hybrid cloud portability and faster deployment cycles.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="content-card">
+                    <div class="education-item">
+                        <h3 class="university-name">Massachusetts Institute of Technology</h3>
+                        <p class="degree">B.S. in Computer Science & Electrical Engineering</p>
+                        <p class="graduation-year">2013 – 2017</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Contributions -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">GitHub Activity</h2>
+                <div class="content-card">
+                    <div class="github-contributions">
+                        <iframe 
+                            src="https://github.com/ashleywang1" 
+                            width="100%" 
+                            height="600" 
+                            frameborder="0"
+                            title="GitHub Profile">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Ashley Wang. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
