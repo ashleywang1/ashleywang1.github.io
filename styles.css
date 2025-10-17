@@ -115,25 +115,38 @@ body {
     font-weight: 400;
 }
 
-.contact-info {
+.social-links {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
 }
 
-.contact-link {
+.social-icon-button {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    color: var(--text-secondary);
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--bg-card);
+    border: 2px solid var(--accent-primary);
+    color: var(--accent-primary);
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
 }
 
-.contact-link:hover {
-    color: var(--accent-primary);
+.social-icon-button:hover {
+    background-color: var(--accent-primary);
+    color: var(--bg-card);
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: var(--shadow-lg);
+}
+
+.social-icon-button:active {
+    transform: translateY(-2px) scale(1.05);
 }
 
 /* Sections */
@@ -176,29 +189,6 @@ body {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
-}
-
-/* Skills */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-.skill-category {
-    text-align: center;
-}
-
-.skill-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-    color: var(--accent-primary);
-}
-
-.skill-list {
-    color: var(--text-secondary);
-    line-height: 1.7;
 }
 
 /* Experience */
@@ -313,6 +303,19 @@ body {
     border-radius: 8px;
 }
 
+/* Theme-specific visibility */
+.dark-theme-only {
+    display: none;
+}
+
+[data-theme="dark"] .dark-theme-only {
+    display: block;
+}
+
+[data-theme="dark"] .light-theme-only {
+    display: none;
+}
+
 .github-link-container {
     margin-top: 2rem;
 }
@@ -372,15 +375,14 @@ body {
         font-size: 2rem;
     }
     
-    .contact-info {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+    .social-links {
+        gap: 1.25rem;
     }
     
-    .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+    .social-icon-button {
+        width: 55px;
+        height: 55px;
+        font-size: 1.375rem;
     }
     
     .content-card {
@@ -422,7 +424,7 @@ html {
 
 /* Focus states for accessibility */
 .theme-toggle:focus,
-.contact-link:focus {
+.social-icon-button:focus {
     outline: 2px solid var(--accent-primary);
-    outline-offset: 2px;
+    outline-offset: 4px;
 }
