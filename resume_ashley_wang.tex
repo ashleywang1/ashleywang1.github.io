@@ -1,0 +1,140 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{geometry}
+
+\geometry{left=0.75in,right=0.75in,top=0.75in,bottom=0.75in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Ashley Wang} \\ \vspace{1pt}
+    \small Senior Software Engineering Manager \\ \vspace{1pt}
+    \href{mailto:ashley.wang@example.com}{\underline{ashley.wang@example.com}} $|$ 
+    \href{https://linkedin.com/in/ashleywang}{\underline{linkedin.com/in/ashleywang}} $|$
+    \href{https://github.com/ashleywang1}{\underline{github.com/ashleywang1}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+  \small{Senior Software Engineering Manager with 10+ years of experience leading high-performing engineering teams and delivering scalable distributed systems. Expertise in cloud-native technologies, service mesh architectures, and building developer-focused tools. Proven track record of driving technical excellence while fostering collaborative team environments.}
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Go, C/C++, Python, Java, JavaScript} \\
+     \textbf{Systems \& Architecture}{: Distributed Systems, Microservices, Service Mesh, API Gateways, Cloud-Native Architecture} \\
+     \textbf{DevOps \& Tools}{: Kubernetes, Docker, Istio, Envoy Proxy, CI/CD, Terraform, Helm} \\
+     \textbf{Leadership}{: Team Management, Technical Strategy, Agile/Scrum, Cross-functional Collaboration, Mentoring}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior Software Engineering Manager}{January 2019 -- Present}
+      {Solo.io}{Remote}
+      \resumeItemListStart
+        \resumeItem{Lead a team of 15+ engineers developing next-generation API gateway and service mesh solutions}
+        \resumeItem{Drive technical architecture and roadmap for cloud-native connectivity products built on Envoy Proxy}
+        \resumeItem{Spearhead adoption of Go-based microservices architecture, improving system performance by 40\%}
+        \resumeItem{Establish engineering best practices, code review standards, and CI/CD pipelines across multiple product teams}
+        \resumeItem{Partner with product management and customer success to deliver features that scale to enterprise deployments}
+        \resumeItem{Mentor senior engineers and technical leads, fostering a culture of technical excellence and innovation}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{June 2017 -- December 2019}
+      {Akamai Technologies}{Cambridge, MA}
+      \resumeItemListStart
+        \resumeItem{Developed high-performance C/C++ components for Akamai's global content delivery network}
+        \resumeItem{Built monitoring and analytics systems processing terabytes of data daily across distributed infrastructure}
+        \resumeItem{Optimized edge computing logic reducing latency by 25\% for key customer applications}
+        \resumeItem{Collaborated with cross-functional teams to integrate new protocol support and security features}
+        \resumeItem{Contributed to open-source projects and internal tooling to improve developer productivity}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Massachusetts Institute of Technology (MIT)}{Cambridge, MA}
+      {Bachelor of Science in Computer Science \& Electrical Engineering}{September 2013 -- May 2017}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Distributed Systems, Computer Networks, Operating Systems, Algorithms}
+        \resumeItem{Activities: Women in Computer Science, Undergraduate Research Opportunities Program (UROP)}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS & ACHIEVEMENTS-----------
+\section{Notable Achievements}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     $\bullet$ Led company-wide migration to Kubernetes, reducing infrastructure costs by 30\% \\
+     $\bullet$ Published technical blog posts and spoke at industry conferences on service mesh architecture \\
+     $\bullet$ Established mentorship program that improved team retention by 20\%
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
