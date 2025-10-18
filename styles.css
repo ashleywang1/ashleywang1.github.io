@@ -309,7 +309,7 @@ body {
 }
 
 [data-theme="dark"] .dark-theme-only {
-    display: block;
+    display: inline-block;
 }
 
 [data-theme="dark"] .light-theme-only {
